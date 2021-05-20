@@ -95,6 +95,7 @@ Construct a corpus from the "texts" column in `dat_inaug`.
 
 
 ```r
+dat_inaug$texts<- as.character(dat_inaug$texts)
 corp_inaug <- corpus(dat_inaug, text_field = "texts")
 print(corp_inaug)
 ```
